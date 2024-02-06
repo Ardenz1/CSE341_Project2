@@ -1,2 +1,2 @@
-Recipe API: Collection 1: Recipes (title, ingredients, instructions, cuisine, etc.). Collection 2: Chefs (name, nationality, specialty, etc.)
+Recipe API: Collection 1: Recipes (title, ingredients, instructions, cuisine, cook time, prep time, total time, serverings). Collection 2: Chefs (name, nationality, specialty, etc.)
 

@@ -1,0 +1,84 @@
+{
+    "recipes": {
+      "recipe1": {
+        "title": "Spaghetti Carbonara",
+        "ingredients": [
+          "200g spaghetti",
+          "100g pancetta or guanciale, diced",
+          "2 large eggs",
+          "50g grated Parmesan cheese",
+          "Black pepper, to taste",
+          "Salt, to taste"
+        ],
+        "instructions": [
+          "Cook the spaghetti according to package instructions until al dente.",
+          "In a separate pan, fry the diced pancetta or guanciale until crispy.",
+          "In a bowl, whisk together the eggs and grated Parmesan cheese.",
+          "Drain the cooked spaghetti and add it to the pan with the crispy pancetta/guanciale. Toss to coat the spaghetti in the rendered fat.",
+          "Remove the pan from heat and quickly stir in the egg and cheese mixture. The residual heat will cook the eggs, creating a creamy sauce. Season with black pepper and salt to taste.",
+          "Serve immediately, garnished with additional grated Parmesan cheese and freshly cracked black pepper."
+        ],
+        "cuisine": "Italian",
+        "cook_time": "15 minutes",
+        "prep_time": "10 minutes",
+        "total_time": "25 minutes",
+        "servings": 2
+      },
+      "recipe2": {
+        "title": "Chicken Alfredo",
+        "ingredients": [
+          "8 oz fettuccine",
+          "2 boneless, skinless chicken breasts",
+          "2 tbsp olive oil",
+          "4 cloves garlic, minced",
+          "1 cup heavy cream",
+          "1 cup grated Parmesan cheese",
+          "Salt and pepper, to taste",
+          "Fresh parsley, for garnish"
+        ],
+        "instructions": [
+          "Cook the fettuccine according to package instructions until al dente. Drain and set aside.",
+          "Season the chicken breasts with salt and pepper. In a large skillet, heat olive oil over medium-high heat. Add the chicken breasts and cook until golden brown on both sides and cooked through, about 6-7 minutes per side. Remove from skillet and let rest for a few minutes before slicing.",
+          "In the same skillet, add minced garlic and cook until fragrant, about 1 minute. Pour in the heavy cream and bring to a simmer.",
+          "Stir in grated Parmesan cheese until melted and smooth. Season with salt and pepper to taste.",
+          "Add the cooked fettuccine to the skillet and toss until coated in the sauce.",
+          "Slice the cooked chicken breasts and arrange on top of the pasta. Garnish with fresh parsley.",
+          "Serve immediately."
+        ],
+        "cuisine": "Italian",
+        "cook_time": "20 minutes",
+        "prep_time": "10 minutes",
+        "total_time": "30 minutes",
+        "servings": 4
+      },
+      "recipe3": {
+        "title": "Smash Burgers",
+        "ingredients": [
+          "8 oz fettuccine",
+          "2 boneless, skinless chicken breasts",
+          "2 tbsp olive oil",
+          "4 cloves garlic, minced",
+          "1 cup heavy cream",
+          "1 cup grated Parmesan cheese",
+          "Salt and pepper, to taste",
+          "Fresh parsley, for garnish"
+        ],
+        "instructions": [
+          "Cook the fettuccine according to package instructions until al dente. Drain and set aside.",
+          "Season the chicken breasts with salt and pepper. In a large skillet, heat olive oil over medium-high heat. Add the chicken breasts and cook until golden brown on both sides and cooked through, about 6-7 minutes per side. Remove from skillet and let rest for a few minutes before slicing.",
+          "In the same skillet, add minced garlic and cook until fragrant, about 1 minute. Pour in the heavy cream and bring to a simmer.",
+          "Stir in grated Parmesan cheese until melted and smooth. Season with salt and pepper to taste.",
+          "Add the cooked fettuccine to the skillet and toss until coated in the sauce.",
+          "Slice the cooked chicken breasts and arrange on top of the pasta. Garnish with fresh parsley.",
+          "Serve immediately."
+        ],
+        "cuisine": "Italian",
+        "cook_time": "20 minutes",
+        "prep_time": "10 minutes",
+        "total_time": "30 minutes",
+        "servings": 4
+      }
+
+    }
+  }
+  
