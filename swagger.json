@@ -1,15 +1,13 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "My API",
-    "description": "Recipe",
+    "title": "My Recipes",
+    "description": "Recipes and Chefs",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "cse-341project2.onrender.com",
   "basePath": "/",
-  "schemes": [
-    "http"
-  ],
+  "schemes": ["https"],
   "paths": {
     "/api-docs": {
       "get": {
@@ -104,9 +102,7 @@
     "/recipes/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
@@ -202,9 +198,7 @@
     "/chefs/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "OK"
@@ -246,9 +240,7 @@
     "/chefs/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
