@@ -1,3 +1,7 @@
+#
+#
+#
+#
 # Recipe Routes on localhost
 #gett all recipes
 ###
@@ -94,6 +98,102 @@ content-type: application/json
 ### DELETE request
 DELETE http://localhost:8080/chefs/65c663ebb7140bacac655072 HTTP/1.1
 
-###RENDER
+# API docs
+http://localhost:8080/api-docs/
 
-### 
+#
+#
+#
+#
+###RENDER
+# API docs
+https://cse-341project2.onrender.com/api-docs/#/
+
+### Get all recipes 
+GET https://cse-341project2.onrender.com/recipes
+
+### Get recipe by ID
+GET https://cse-341project2.onrender.com/recipes
+
+POST https://cse-341project2.onrender.com/recipes HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Sweet Potato Fries",
+    "ingredients": [
+        "2pounds sweet potatoes, peeled",
+        "2tablespoons olive oil",
+        "1 teaspoon garlic powder",
+        "1 teaspoon paprika",
+        "1 teaspoon salt"
+    ],
+    "instructions": [
+        "Step 1 Heat the oven to 400.",
+        "Step 2 Cut the sweet potatoes into sticks ¼ to ½ inch wide and 3 inches long, and toss them with the oil.",
+        "Step 3 Mix the spices, salt and pepper in a small bowl, and toss them with the sweet potatoes. Spread them out on 2 rimmed baking sheets.",
+        "Step 4 Bake until brown and crisp on the bottom, about 15 minutes, then flip and cook until the other side is crisp, about 10 minutes. Serve hot."
+    ],
+    "cuisine": "American",
+    "cook_time": "25 minutes",
+    "prep_time": "10 minutes",
+    "total_time": "35 minutes",
+    "servings": 4
+}
+
+### PUT request 
+PUT https://cse-341project2.onrender.com/recipes/65c3fa80593e961c129f318c HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Sweet Potato Fries",
+    "ingredients": [
+        "3 pounds sweet potatoes, peeled (optional)",
+        "2tablespoons olive oil",
+        "1 teaspoon garlic powder",
+        "1 teaspoon paprika",
+        "1 teaspoon salt"
+    ],
+    "instructions": [
+        "Step 1 Heat the oven to 400.",
+        "Step 2 Cut the sweet potatoes into sticks ¼ to ½ inch wide and 3 inches long, and toss them with the oil.",
+        "Step 3 Mix the spices, salt and pepper in a small bowl, and toss them with the sweet potatoes. Spread them out on 2 rimmed baking sheets.",
+        "Step 4 Bake until brown and crisp on the bottom, about 15 minutes, then flip and cook until the other side is crisp, about 10 minutes. Serve hot."
+    ],
+    "cuisine": "American",
+    "cook_time": "25 minutes",
+    "prep_time": "10 minutes",
+    "total_time": "35 minutes",
+    "servings": 4
+}
+
+### DELETE request
+DELETE https://cse-341project2.onrender.com/recipes/65c6652fc2cdc28f293a1341 HTTP/1.1
+
+### Get all Chefs
+GET https://cse-341project2.onrender.com/chefs
+
+### Get Chef by ID
+GET https://cse-341project2.onrender.com/chefs/65c408258a8fe96083e8c2b9
+
+###
+POST http://localhost:8080/chefs HTTP/1.1
+content-type: application/json
+
+{
+            "firstName": "Fritz",
+            "nationality": "German",
+            "speciality": "Schnitzel"
+        }
+
+### PUT request 
+PUT https://cse-341project2.onrender.com/chefs/65c663ebb7140bacac655072 HTTP/1.1
+content-type: application/json
+
+{
+            "firstName": "Fritz",
+            "nationality": "German",
+            "speciality": "Schnitzel and Soup"
+        }
+
+### DELETE request
+DELETE https://cse-341project2.onrender.com/chefs/65c663ebb7140bacac655072 HTTP/1.1
