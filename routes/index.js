@@ -6,6 +6,8 @@ const recipeRoutes = require('./recipeRoutes');
 const chefRoutes = require('./chefRoutes');
 
 // Define route handlers
+router.use('/', require('./swagger'));
+
 router.use('/recipes', recipeRoutes);
 router.use('/chefs', chefRoutes);
 

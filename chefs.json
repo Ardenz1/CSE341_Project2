@@ -1,0 +1,20 @@
+{
+    "chef": {
+            "firstName": "Pablo",
+            "nationality": "Italian",
+            "speciality": "Pasta"
+        },
+        "chef2": {
+            "firstName": "Maria",
+            "nationality": "French",
+            "speciality": "Bread"
+        },
+        
+        "chef3": {
+            "firstName": "Lucy",
+            "nationality": "American",
+            "speciality": "Burgers"
+        }
+
+
+}

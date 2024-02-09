@@ -1,10 +1,15 @@
-// models/chefModel.js
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const { getDb } = require('../db/db.config');
 
-const chefSchema = new Schema({
-    // Define chef schema fields
-});
+const getAll = async () => {
+    try {
+        const db = getDb();
+        const chefs = await db.collection('chefs').find().toArray();
+        return chefs;
+    } catch (error) {
+        throw new Error(`Error fetching chefs: ${error.message}`);
+    }
+};
 
-const Chef = mongoose.model('Chef', chefSchema);
-module.exports = Chef;
+module.exports = {
+    getAll
+};
