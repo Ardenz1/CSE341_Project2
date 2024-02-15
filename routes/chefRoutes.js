@@ -2,6 +2,8 @@
 const express = require("express");
 const router = express.Router();
 const chefController = require("../controllers/chefController");
+const validation = require('../middleware/validate');
+
 
 // GET all chefs
 router.get("/", chefController.getAll);
@@ -10,10 +12,10 @@ router.get("/", chefController.getAll);
 router.get("/:id", chefController.getChefById);
 
 // POST a new chef
-router.post("/", chefController.createChef);
+router.post("/", validation.saveChef, chefController.createChef);
 
 // PUT update a chef
-router.put("/:id", chefController.updateChef);
+router.put("/:id", validation.saveChef, chefController.updateChef);
 
 // DELETE a chef
 router.delete("/:id", chefController.deleteChef);

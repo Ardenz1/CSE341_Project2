@@ -5,7 +5,10 @@ const { ObjectId } = require("mongodb");
 // GET all recipes
 const getAll = async (req, res) => {
   const result = await mongodb.getDb().db().collection("chefs").find();
-  result.toArray().then((lists) => {
+  result.toArray().then((err ,lists) => {
+    if (err) {
+      res.status(400).json({ message: err });
+    }
     res.setHeader("Content-Type", "application/json");
     res.status(200).json(lists);
   });

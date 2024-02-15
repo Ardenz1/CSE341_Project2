@@ -11,7 +11,6 @@ const getAll = async (req, res) => {
       .collection("recipes")
       .find()
       .toArray();
-      
     // Populate chef details for each recipe
     for (const recipe of recipes) {
       const chefId = recipe.chefId; // Assuming chef ID is stored in recipe document
@@ -20,10 +19,8 @@ const getAll = async (req, res) => {
         .db()
         .collection("chefs")
         .findOne({ _id: chefId });
-      
       recipe.chef = chef; // Embed chef details into recipe document
     }
-
     res.status(200).json(recipes);
   } catch (error) {
     console.error("Error getting recipes:", error);

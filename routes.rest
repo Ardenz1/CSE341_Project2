@@ -64,7 +64,7 @@ content-type: application/json
 }
 
 ### DELETE request
-DELETE http://localhost:8080/recipes/65c6644db7140bacac655073 HTTP/1.1
+DELETE http://localhost:8080/recipes/65ce6cb7bf7eeb6333698d44 HTTP/1.1
 
 # Chef Routes on Localhost
 # Get all chefs
@@ -96,7 +96,7 @@ content-type: application/json
         }
 
 ### DELETE request
-DELETE http://localhost:8080/chefs/65c663ebb7140bacac655072 HTTP/1.1
+DELETE http://localhost:8080/chefs/65ce6cb7bf7eeb6333698d44 HTTP/1.1
 
 # API docs
 http://localhost:8080/api-docs/
@@ -115,6 +115,7 @@ GET https://cse-341project2.onrender.com/recipes
 ### Get recipe by ID
 GET https://cse-341project2.onrender.com/recipes
 
+###this is for creating a new one
 POST https://cse-341project2.onrender.com/recipes HTTP/1.1
 content-type: application/json
 
@@ -140,7 +141,7 @@ content-type: application/json
     "servings": 4
 }
 
-### PUT request 
+### PUT request this is for updating 
 PUT https://cse-341project2.onrender.com/recipes/65c3fa80593e961c129f318c HTTP/1.1
 content-type: application/json
 
@@ -148,7 +149,7 @@ content-type: application/json
     "title": "Sweet Potato Fries",
     "ingredients": [
         "3 pounds sweet potatoes, peeled (optional)",
-        "2tablespoons olive oil",
+        "2 tablespoons olive oil",
         "1 teaspoon garlic powder",
         "1 teaspoon paprika",
         "1 teaspoon salt"
@@ -167,7 +168,7 @@ content-type: application/json
 }
 
 ### DELETE request
-DELETE https://cse-341project2.onrender.com/recipes/65c6652fc2cdc28f293a1341 HTTP/1.1
+DELETE https://cse-341project2.onrender.com/recipes/65ce678b779dacc2bc282b70 HTTP/1.1
 
 ### Get all Chefs
 GET https://cse-341project2.onrender.com/chefs
