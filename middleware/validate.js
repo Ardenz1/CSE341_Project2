@@ -3,10 +3,10 @@ const validator = require("../helpers/validate");
 const saveRecipe = (req, res, next) => {
   const validationRule = {
     title: "required|string",
-    ingredients: "required|string",
-    instructions: "required|email",
+    ingredients: "required|array",
+    instructions: "required|array",
     cuisine: "required|string",
-    cook_time: "required|email",
+    cook_time: "required|string",
     prep_time: "required|string",
     total_time: "string",
     servings: "required|numeric",
@@ -28,7 +28,7 @@ const saveChef = (req, res, next) => {
   const validationRule = {
     firstName: "required|string",
     nationality: "required|string",
-    speciality: "required|email",
+    speciality: "string",
     recipeId: "numeric",
   };
   validator(req.body, validationRule, {}, (err, status) => {

@@ -44,8 +44,8 @@ content-type: application/json
 {
     "title": "Sweet Potato Fries",
     "ingredients": [
-        "3 pounds sweet potatoes, peeled (optional)",
-        "2tablespoons olive oil",
+        "3 pounds sweet potatoes, peeled (optional :))",
+        "2 tablespoons olive oil",
         "1 teaspoon garlic powder",
         "1 teaspoon paprika",
         "1 teaspoon salt"
@@ -92,7 +92,7 @@ content-type: application/json
 {
             "firstName": "Fritz",
             "nationality": "German",
-            "speciality": "Schnitzel and Soup"
+            "speciality": "Schnitzel"
         }
 
 ### DELETE request
