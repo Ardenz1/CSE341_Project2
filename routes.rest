@@ -177,7 +177,7 @@ GET https://cse-341project2.onrender.com/chefs
 GET https://cse-341project2.onrender.com/chefs/65c408258a8fe96083e8c2b9
 
 ###
-POST http://localhost:8080/chefs HTTP/1.1
+POST http://cse-341project2.onrender.com/chefs HTTP/1.1
 content-type: application/json
 
 {
