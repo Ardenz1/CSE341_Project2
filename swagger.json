@@ -10,6 +10,18 @@
   "schemes": [
     "https"
   ],
+  "securityDefinitions": {
+    "Auth0JWT": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "security": [
+    {
+      "Auth0JWT": []
+    }
+  ],
   "paths": {
     "/api-docs": {
       "get": {
@@ -23,7 +35,12 @@
     },
     "/recipes/": {
       "get": {
-        "description": "",
+        "description": "Get All Recipes",
+        "security": [
+          {
+            "Auth0JWT": []
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
