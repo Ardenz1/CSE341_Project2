@@ -16,7 +16,7 @@ POST http://localhost:8080/recipes HTTP/1.1
 content-type: application/json
 
 {
-    "title": "Sweet Potato Fries",
+    "title": "Sweet Potato Fries2",
     "ingredients": [
         "2pounds sweet potatoes, peeled",
         "2tablespoons olive oil",

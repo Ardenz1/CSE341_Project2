@@ -8,6 +8,9 @@ const doc = {
   host: "cse-341project2.onrender.com",
   schemes: ["https"],
 };
+// cse-341project2.onrender.com
+// on auth0
+// https://cse-341project2.onrender.com/callback
 
 const outputFile = "./swagger.json";
 const endpointsFiles = ["./routes/index.js"];
