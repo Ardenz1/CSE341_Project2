@@ -23,19 +23,19 @@ const config = {
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 app.use(auth(config));
 
-// Middleware to redirect unauthenticated users to the login page
-const redirectToLogin = (req, res, next) => {
-  if (!req.oidc.isAuthenticated()) {
-    // Redirect unauthenticated users to the login page
-    return res.redirect("/login");
-  }
-  // If authenticated, proceed to the next middleware or route handler
-  next();
-};
+// // Middleware to redirect unauthenticated users to the login page
+// const redirectToLogin = (req, res, next) => {
+//   if (!req.oidc.isAuthenticated()) {
+//     // Redirect unauthenticated users to the login page
+//     return res.redirect("/login");
+//   }
+//   // If authenticated, proceed to the next middleware or route handler
+//   next();
+// };
 
-// redirect if not authorized 
-app.use("/profile", redirectToLogin);
-app.use("/recipes", redirectToLogin);
+// // redirect if not authorized 
+// app.use("/profile", redirectToLogin);
+// app.use("/recipes", redirectToLogin);
 
 // req.isAuthenticated is provided from the auth router
 app.get("/", (req, res) => {
@@ -49,6 +49,7 @@ app.get("/profile", requiresAuth(), (req, res) => {
 
 // get the recipes
 app.use("/recipes", recipesRouter);
+
 
 app
   .use(bodyParser.json())
