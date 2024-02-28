@@ -17,8 +17,8 @@ content-type: application/json
 
 {
     "title": "Sweet Potato Fries2",
-    "ingredients": [
-        "2pounds sweet potatoes, peeled",
+    "ingredients": [                                             
+        "2pounds sweet potatoes, peeled",                                           
         "2tablespoons olive oil",
         "1 teaspoon garlic powder",
         "1 teaspoon paprika",
@@ -90,7 +90,7 @@ PUT http://localhost:8080/chefs/65c663ebb7140bacac655072 HTTP/1.1
 content-type: application/json
 
 {
-            "firstName": "Fritz",
+            "firstName": "Fritz2",
             "nationality": "German",
             "speciality": "Schnitzel"
         }
@@ -181,7 +181,8 @@ POST http://cse-341project2.onrender.com/chefs HTTP/1.1
 content-type: application/json
 
 {
-            "firstName": "Fritz",
+
+            "firstName": "Fritz2",
             "nationality": "German",
             "speciality": "Schnitzel"
         }

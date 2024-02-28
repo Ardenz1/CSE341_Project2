@@ -3,10 +3,12 @@ const express = require("express");
 const router = express.Router();
 const chefController = require("../controllers/chefController");
 const validation = require('../middleware/validate');
+const { requiresAuth } = require("express-openid-connect");
+
 
 
 // GET all chefs
-router.get("/", chefController.getAll);
+router.get("/", requiresAuth(), chefController.getAll);
 
 // GET a chef by ID
 router.get("/:id", chefController.getChefById);

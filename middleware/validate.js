@@ -18,9 +18,10 @@ const saveRecipe = (req, res, next) => {
         message: "Validation failed",
         data: err,
       });
-    } else {
-      next();
+      // Return to exit the middleware chain
+      return;
     }
+    next(); // Proceed to the next middleware or route handler
   });
 };
 
@@ -38,9 +39,10 @@ const saveChef = (req, res, next) => {
         message: "Validation failed",
         data: err,
       });
-    } else {
-      next();
+      // Return to exit the middleware chain
+      return;
     }
+    next(); // Proceed to the next middleware or route handler
   });
 };
 

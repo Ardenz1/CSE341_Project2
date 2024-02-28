@@ -7,21 +7,7 @@
   },
   "host": "cse-341project2.onrender.com",
   "basePath": "/",
-  "schemes": [
-    "https"
-  ],
-  "securityDefinitions": {
-    "Auth0JWT": {
-      "type": "apiKey",
-      "name": "Authorization",
-      "in": "header"
-    }
-  },
-  "security": [
-    {
-      "Auth0JWT": []
-    }
-  ],
+  "schemes": ["https"],
   "paths": {
     "/api-docs": {
       "get": {
@@ -36,11 +22,6 @@
     "/recipes/": {
       "get": {
         "description": "Get All Recipes",
-        "security": [
-          {
-            "Auth0JWT": []
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -103,9 +84,7 @@
     "/recipes/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
@@ -204,9 +183,7 @@
     "/chefs/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "OK"
@@ -254,9 +231,7 @@
     "/chefs/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",

@@ -23,4 +23,4 @@ swaggerAutogen(outputFile, endpointsFiles, doc);
 //   await import('./index.js');
 // });
 
-// command to run to generate swagger.json 
+// command to run to generate swagger.json
