@@ -14,7 +14,7 @@ router.get("/", requiresAuth(), chefController.getAll);
 router.get("/:id", chefController.getChefById);
 
 // POST a new chef
-router.post("/", validation.saveChef, chefController.createChef);
+router.post("/", requiresAuth(), validation.saveChef, chefController.createChef);
 
 // PUT update a chef
 router.put("/:id", validation.saveChef, chefController.updateChef);
