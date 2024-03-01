@@ -15,7 +15,7 @@ router.get("/", requiresAuth(), recipeController.getAll);
 router.get("/:id",  recipeController.getRecipeById);
 
 // POST a new recipe
-router.post("/", requiresAuth(), recipeController.createRecipe);
+router.post("/", requiresAuth(), validation.saveRecipe, recipeController.createRecipe);
 // router.post("/", requiresAuth(), validation.saveRecipe, recipeController.createRecipe);
 
 // PUT update a recipe
